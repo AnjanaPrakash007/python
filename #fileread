@@ -1,0 +1,60 @@
+#fileread
+def load_fps(filepath):
+    with open(filepath,"r") as file:
+        file_contents = file.read()
+    print(file_contents)
+load_fps("polldata.fps")
+
+
+#spliting lines into dictionary
+def split_line_into_dict(line):
+    key_value_pairs = line.split('::')
+    dictionary = {}
+
+    for pair in key_value_pairs:
+        key, value = pair.strip().split('::')
+        dictionary[key.strip()] = value.strip()
+
+    return dictionary
+
+split_line_into_dict(line)
+result_dict = split_line_into_dict(line)
+print(result_dict)
+
+
+q2
+if any(tag in item['tags'] for tag in list_of_tags):
+            
+
+            return(item.append(tags))
+    print(item)
+
+filter_by_tags(new_polldata,["phone","cricket"])
+
+
+for item in new_polldata:
+        if any(tag in item["tags"] for tag in list_of_tags):
+            filtered_data.append(item)
+    return filtered_data
+result=filter_by_tags(new_polldata,["phone","cricket"])
+print(result)
+
+
+
+
+for item in new_polldata:
+        print(item)
+        tags=item['tags']
+        for tag in tags:
+            for x in list_of_tags:
+                if x in tag:
+                    print(x)
+
+
+for x in optionName:
+                if x in option:
+                    if(option==optionName):
+
+                    count=new_polldata[poll_number]['optionVote']['puma ']
+        
+        print(count)
